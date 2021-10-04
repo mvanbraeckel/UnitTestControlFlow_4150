@@ -1,0 +1,24 @@
+In setUpModule() - global
+  In setUpClass() - Alpha
+    In setUp() - Alpha
+      In test_A() - Alpha
+    In tearDown() - Alpha
+    In setUp() - Alpha
+      In test_B() - Alpha
+    In tearDown() - Alpha
+    In setUp() - Alpha
+      In test_C() - Alpha
+    In tearDown() - Alpha
+  In tearDownClass() - Alpha
+  In setUpClass() - Beta
+    In setUp() - Beta
+      In test_A() - Beta
+    In tearDown() - Beta
+    In setUp() - Beta
+      In test_B() - Beta
+    In tearDown() - Beta
+    In setUp() - Beta
+      In test_C() - Beta
+    In tearDown() - Beta
+  In tearDownClass() - Beta
+In tearDownMowdule() - global

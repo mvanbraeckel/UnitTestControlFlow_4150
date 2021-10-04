@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -x
+javac \
+	-cp junit-4.10.jar:.  \
+			RunAllTests.java TestOrderingAlpha.java TestOrderingBeta.java
+
+java -cp junit-4.10.jar:.  RunAllTests
+
+
