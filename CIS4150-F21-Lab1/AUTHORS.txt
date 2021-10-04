@@ -1,3 +1,9 @@
 
 Place the names of all group members in this file.
 
+Noah Abrey, 1011048, nabrey@uoguelph.ca
+Eric Morgan, 1003774, emorga03@uoguelph.ca
+Seegal Panchal, 1016249, panchals@uoguelph.ca
+Mitchell Van Braeckel, 1002297, mvanbrae@uoguelph.ca
+
+Note: We used the expected output *exactly* as provided (With typo: Mowdule)

@@ -1,0 +1,28 @@
+In setUpClass() - Alpha
+  In setUp() - Alpha
+    In test_A() - Alpha
+  In tearDown() - Alpha
+  In setUp() - Alpha
+    In test_B() - Alpha
+  In tearDown() - Alpha
+  In setUp() - Alpha
+    In test_C() - Alpha
+  In tearDown() - Alpha
+In tearDownClass() - Alpha
+Overall Alpha result was : FAILURE
+List of Alpha test failure messages:
+test_B(TestOrderingAlpha): expected:<[A]> but was:<[B]>
+In setUpClass() - Beta
+  In setUp() - Beta
+    In test_A() - Beta
+  In tearDown() - Beta
+  In setUp() - Beta
+    In test_B() - Beta
+  In tearDown() - Beta
+  In setUp() - Beta
+    In test_C() - Beta
+  In tearDown() - Beta
+In tearDownClass() - Beta
+Overall Beta result was : FAILURE
+List of Beta test failure messages:
+test_B(TestOrderingBeta): expected:<[A]> but was:<[B]>

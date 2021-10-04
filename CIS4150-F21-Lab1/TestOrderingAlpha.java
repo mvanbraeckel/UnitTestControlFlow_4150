@@ -6,7 +6,9 @@
 // Import all of the decorators required from JUnit
 import org.junit.Test;
 import org.junit.Before;
+import org.junit.After;
 import org.junit.BeforeClass;
+import org.junit.AfterClass;
 // ... add code ...
 
 
@@ -30,17 +32,29 @@ public class TestOrderingAlpha
 	// work in this *class* is done.
 	// This will need to be a *static* method -- why?
 	// ... add code ...
-
+	@AfterClass
+	public static void tearDownClass()
+	{
+		System.out.format("In tearDownClass() - Alpha\n");
+	}
 
 	// Add a method to do setup required before any single test
 	// case is run.
 	// ... add code ...
-
+	@Before
+	public void setUp()
+	{
+		System.out.format("  In setUp() - Alpha\n");
+	}
 
 	// Add a method to do cleanup required after any single test
 	// case is run.
 	// ... add code ...
-
+	@After
+	public void tearDown()
+	{
+		System.out.format("  In tearDown() - Alpha\n");
+	}
 
 	// Test configuration "A" -- a passing test case
 	@Test
