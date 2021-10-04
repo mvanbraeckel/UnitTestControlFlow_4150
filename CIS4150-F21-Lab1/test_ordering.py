@@ -32,15 +32,17 @@ class TestConversionsAlpha(unittest.TestCase):
 
 	# Declare a "class method" (a static method) fixture to
 	# do the clean up for the entire class worth of tests
-	# ... add code ...
-
+	@classmethod
+	def cleanUpClass(self):
+		print("  In cleanUpClass() - Alpha")
 
 	# Declare a fixture to set up for each test case
-	# ... add code ...
-
+	def setUp(self):
+		print("   In setUp() - Alpha")
 
 	# Declare a fixture to clean up for each test case
-	# ... add code ...
+	def cleanUp(self):
+		print("   In tearDown() - Alpha")
 
 
 	# Test configuration "A" -- a passing test case
@@ -52,7 +54,7 @@ class TestConversionsAlpha(unittest.TestCase):
 	def test_B(self):
 		print("      In test_B() - Alpha")
 		self.assertEqual("A", "B")
-		
+
 	# Test configuration "C" -- a passing test case
 	def test_C(self):
 		print("      In test_C() - Alpha")
@@ -64,20 +66,16 @@ class TestConversionsBeta(unittest.TestCase):
 
 	# Declare a "class method" (a static method) fixture to
 	# do the set up for the entire class worth of tests
-	# ... add code ...
 
 
 	# Declare a "class method" (a static method) fixture to
 	# do the clean up for the entire class worth of tests
-	# ... add code ...
 
 
 	# Declare a fixture to set up for each test case
-	# ... add code ...
 
 
 	# Declare a fixture to clean up for each test case
-	# ... add code ...
 
 
 	# Test configuration "A" -- a passing test case
@@ -89,7 +87,7 @@ class TestConversionsBeta(unittest.TestCase):
 	def test_B(self):
 		print("      In test_B() - Beta")
 		self.assertEqual("A", "B")
-		
+
 	# Test configuration "C" -- a passing test case
 	def test_C(self):
 		print("      In test_C() - Beta")
